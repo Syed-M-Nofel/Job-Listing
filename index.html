@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Company Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for jobs...">
+      <button onclick="searchJobs()">Search</button>
+    </div>
+
+    <div id="jobList">
+      <!-- Job list will be dynamically populated here -->
+    </div>
+
+    <div class="button-container">
+      <button id="addButton" onclick="addNewJob()">Add Job</button>
+      <button id="showAllButton" onclick="showAllJobs()">Show All</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
