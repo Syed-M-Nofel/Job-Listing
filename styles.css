@@ -51,10 +51,6 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
   }
-  
-  /* styles.css */
-
-/* ... Previous CSS code ... */
 
 button#addButton {
     position: fixed;
@@ -68,10 +64,6 @@ button#addButton {
     border-radius: 5px;
     cursor: pointer;
   }
-
-  
-  /* styles.css */
-
 
 .button-container {
     text-align: center;

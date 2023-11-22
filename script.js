@@ -5,7 +5,6 @@ let jobData = [
     { name: 'Frontend Developer', field: 'Development' },
     { name: 'Backend Developer', field: 'Development' },
     { name: 'Data Scientist', field: 'Data Science' },
-    // Add more job data here...
   ];
   
   function displayJobs(jobs) {
@@ -44,16 +43,10 @@ let jobData = [
     }
   }
 
-
-   // script.js
-   // ... Previous JavaScript code ...
    function showAllJobs() 
    {
     displayJobs(jobData);
    }
-  
-  // ... Rest of the JavaScript code ...
-  
   
   // Initial display of all jobs
   displayJobs(jobData);  
