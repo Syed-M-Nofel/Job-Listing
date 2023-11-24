@@ -5,6 +5,8 @@ let jobData = [
     { name: 'Frontend Developer', field: 'Development' },
     { name: 'Backend Developer', field: 'Development' },
     { name: 'Data Scientist', field: 'Data Science' },
+    { name: 'Backend Developer', field: 'DJango' },
+    { name: 'Backend Developer', field: 'Flask' },
   ];
   
   function displayJobs(jobs) {

@@ -18,19 +18,45 @@ body {
     width: 100px; /* Adjust as needed */
   }
   
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+/* styles.css */
+
+/* ... Previous CSS code ... */
+
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  text-align: center; /* Aligns the content in the center horizontally */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Change from flex to inline-block */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+
   
   main {
     padding: 20px;
@@ -49,7 +75,7 @@ body {
     width: calc(50% - 20px); /* Two jobs per row with some spacing */
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid rgb(0, 0, 0);
   }
 
 button#addButton {
