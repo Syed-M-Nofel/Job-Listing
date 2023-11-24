@@ -2,21 +2,48 @@
 
 // Sample job data
 let jobData = [
-    { name: 'Frontend Developer', field: 'Development' },
-    { name: 'Backend Developer', field: 'Development' },
-    { name: 'Data Scientist', field: 'Data Science' },
-    { name: 'Backend Developer', field: 'DJango' },
-    { name: 'Backend Developer', field: 'Flask' },
+    { name: 'Frontend Developer', 
+      field: 'Development',
+      position: 'Senior Frontend Developer',
+      role: 'Frontend',
+      location: 'France Only',
+    },
+    { name: 'Frontend Developer', 
+      field: 'Development',
+      position: 'Junior Frontend Developer',
+      role: 'Frontend',
+      location: 'India Only',
+    },
+    { name: 'Backend Developer', 
+      field: 'Development',
+      position: 'Senior Backend Developer',
+      role: 'Backend',
+      location: 'UK Only',
+    },
+    { name: 'Backend Developer', 
+      field: 'Development',
+      position: 'Junior Backend Developer',
+      role: 'Backend',
+      location: 'USA Only',
+    },
+    { name: 'Backend Developer', 
+      field: 'Data Science',
+      position: 'Senior Backend Developer',
+      role: 'Backend',
+      location: 'Pakistan',
+    }
+
   ];
   
-  function displayJobs(jobs) {
+  function displayJobs(jobs) 
+  {
     const jobListContainer = document.getElementById('jobList');
     jobListContainer.innerHTML = '';
   
     jobs.forEach(job => {
       const jobDiv = document.createElement('div');
       jobDiv.classList.add('job');
-      jobDiv.textContent = `${job.name} - ${job.field}`;
+      jobDiv.textContent = `${job.name} - ${job.field}- ${job.position}- ${job.role}- ${job.location}`;
       jobListContainer.appendChild(jobDiv);
     });
   }
@@ -24,7 +51,7 @@ let jobData = [
   function searchJobs() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const filteredJobs = jobData.filter(job =>
-      job.name.toLowerCase().includes(searchTerm) || job.field.toLowerCase().includes(searchTerm)
+      job.name.toLowerCase().includes(searchTerm) || job.field.toLowerCase().includes(searchTerm) || job.role.toLowerCase().includes(searchTerm)
     );
   
     displayJobs(filteredJobs);
@@ -33,6 +60,9 @@ let jobData = [
   function addNewJob() {
     const name = prompt('Enter job name:');
     const field = prompt('Enter job field:');
+    const position = prompt('Enter job position:');
+    const role = prompt('Enter job role:');
+    const location = prompt('Enter job location:');
   
     if (name && field) {
       const newJob = { name, field };
@@ -51,4 +81,4 @@ let jobData = [
    }
   
   // Initial display of all jobs
-  displayJobs(jobData);  
+  displayJobs(jobData);
